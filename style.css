@@ -32,11 +32,7 @@ h1 {
   animation: fadeIn 2s ease-in-out;
 }
 h1 .foodo {
-  transition: color 0.3s, transform 0.3s;
-}
-h1 .foodo:hover {
-  color: #e67e22;
-  transform: scale(1.1);
+  animation: colorChange 2s 2s forwards;
 }
 @keyframes fadeIn {
   0% {
@@ -46,6 +42,14 @@ h1 .foodo:hover {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes colorChange {
+  0% {
+    color: #d35400;
+  }
+  100% {
+    color: #e67e22;
   }
 }
 p {
