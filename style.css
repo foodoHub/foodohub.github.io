@@ -119,6 +119,12 @@ footer {
   background-color: #333;
   color: white;
   text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+body.light-mode footer {
+  background-color: #f0f0f0;
+  color: #333;
 }
 
 footer .logo-img {
@@ -234,12 +240,14 @@ input:checked + .slider:before {
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 2rem;
-    flex-direction: column;
+    font-size: 1.8rem;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   .logo-img {
-    height: 60px;
+    height: 40px;
   }
 
   p {
@@ -257,5 +265,16 @@ input:checked + .slider:before {
     width: 100%;
     max-width: 300px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 1.5rem;
+    gap: 8px;
+  }
+
+  .logo-img {
+    height: 35px;
   }
 }
