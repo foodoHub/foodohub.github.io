@@ -15,32 +15,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="dark-mode">
+    <label class="switch" title="Toggle dark/light mode">
+      <input type="checkbox" id="darkModeToggle" checked />
+      <span class="slider"></span>
+    </label>
+    
     <main>
-      <label class="switch">
-        <input type="checkbox" id="darkModeToggle" checked />
-        <span class="slider"></span>
-      </label>
-      <h1>Welcome to <span class="foodo">foodo</span></h1>
-      <p>
-        Your AI-powered cooking assistant, guiding you step-by-step to create delicious meals while connecting you with a community of food lovers.
-      </p>
+      <div class="content-container">
+        <h1>
+          Welcome to
+          <span class="logo-container">
+            <img src="./assets/foodo-yellow.png" alt="foodo logo" class="logo-img" width="75" height="75">
+          </span>
+        </h1>
+        
+        <p>
+          Your AI-powered cooking assistant, guiding you step-by-step to create delicious meals while connecting you with a community of food lovers.
+        </p>
 
-      <div class="cta-buttons">
-        <a href="https://ctis.bilkent.edu.tr/ctis_seniorProject.php?semester=31&id=5043" target="_blank" rel="noopener noreferrer"
-          >Senior Project Page</a
-        >
-        <a href="https://github.com/foodohub" target="_blank" rel="noopener noreferrer">GitHub Organization</a>
+        <div class="canva-embed">
+          <iframe 
+            loading="lazy" 
+            src="https://www.canva.com/design/DAGfwL8UX80/02WJhJ-0MQgJTaBOlBRrjw/view?embed" 
+            title="foodo presentation"
+            allowfullscreen="allowfullscreen" 
+            allow="fullscreen">
+          </iframe>
+        </div>
+
+        <div class="cta-buttons">
+          <a href="https://ctis.bilkent.edu.tr/ctis_seniorProject.php?semester=31&id=5043" target="_blank" rel="noopener noreferrer">Senior Project Page</a>
+          <a href="https://github.com/foodohub" target="_blank" rel="noopener noreferrer">GitHub Organization</a>
+        </div>
       </div>
     </main>
 
     <footer>
-      &copy; 2024
-      <span class="footo">foodo</span>. All rights reserved.
+      &copy; 2025 <img src="./assets/foodo-yellow.png" alt="foodo" class="logo-img" width="30" height="30"> All rights reserved.
     </footer>
+    
     <script>
       document.getElementById('darkModeToggle').addEventListener('change', function () {
-        document.body.classList.toggle('light-mode', !this.checked)
-      })
+        document.body.classList.toggle('light-mode', !this.checked);
+      });
     </script>
   </body>
 </html>
