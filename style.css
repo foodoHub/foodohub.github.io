@@ -184,6 +184,10 @@ input:checked + .slider {
   border-color: #DCB81B;
 }
 
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
 /* Canva Embed */
 .canva-embed {
   position: relative;
