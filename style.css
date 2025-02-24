@@ -136,6 +136,60 @@ footer .logo-img {
   margin: 0 5px;
 }
 
+.contact-email {
+  color: #DCB81B;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 8px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  display: inline-block;
+  margin: 30px auto;
+  letter-spacing: 0.5px;
+}
+
+.contact-email::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  background: #DCB81B;
+  opacity: 0.1;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.contact-email:hover {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(220, 184, 27, 0.8);
+  letter-spacing: 1px;
+}
+
+.contact-email:hover::before {
+  transform: scale(1.05);
+  opacity: 0.25;
+  box-shadow: 0 0 30px rgba(220, 184, 27, 0.6);
+}
+
+body.light-mode .contact-email {
+  color: #d35400;
+}
+
+body.light-mode .contact-email::before {
+  background: #d35400;
+}
+
+body.light-mode .contact-email:hover {
+  color: #d35400;
+  text-shadow: 0 0 10px rgba(211, 84, 0, 0.4);
+}
+
 /* Toggle Switch */
 .switch {
   position: fixed;
