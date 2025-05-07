@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="./assets/foodo.svg" />
-    <meta
-      name="description"
-      content="Discover foodo - your AI-powered cooking assistant. Explore recipes, join virtual cooking classes, and connect with food enthusiasts."
-    />
-    <meta name="keywords" content="cooking, AI cooking assistant, recipes, virtual cooking classes, food lovers community" />
-    <title>foodo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="dark-mode">
-    <label class="switch" title="Toggle dark/light mode">
-      <input type="checkbox" id="darkModeToggle" checked />
-      <span class="slider"></span>
-    </label>
-    
-    <main>
-      <div class="content-container">
-        <h1>
-          Welcome to
-          <span class="logo-container">
-            <img src="./assets/foodo-yellow.png" alt="foodo logo" class="logo-img" width="75" height="75">
-          </span>
-        </h1>
-        
-        <p>
-          Your AI-powered cooking assistant, guiding you step-by-step to create delicious meals while connecting you with a community of food lovers.
-        </p>
 
-        <div style="position: relative; width: 100%; max-width: 800px; margin: 0 auto; height: 0; padding-top: 56.25%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
-          <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-            src="https://www.canva.com/design/DAGmUCxl3ZA/Xw9LMDyjz-UVuTkZNSj_yg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-          </iframe>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="./assets/foodo.svg" />
+  <meta name="description"
+    content="Discover foodo - your AI-powered cooking assistant. Explore recipes, join virtual cooking classes, and connect with food enthusiasts." />
+  <meta name="keywords"
+    content="cooking, AI cooking assistant, recipes, virtual cooking classes, food lovers community" />
+  <title>foodo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <div class="cta-buttons">
-          <a href="https://ctis.bilkent.edu.tr/ctis_seniorProject.php?semester=31&id=5043" target="_blank" rel="noopener noreferrer">Senior Project Page</a>
-          <a href="https://github.com/foodohub" target="_blank" rel="noopener noreferrer">GitHub Organization</a>
-        </div>
-        
-        <a href="mailto:hello@foodo.cfd" class="contact-email">hello@foodo.cfd</a>
+<body class="dark-mode">
+  <label class="switch" title="Toggle dark/light mode">
+    <input type="checkbox" id="darkModeToggle" checked />
+    <span class="slider"></span>
+  </label>
+
+  <main>
+    <div class="content-container">
+      <h1>
+        Welcome to
+        <span class="logo-container">
+          <img src="./assets/foodo-yellow.png" alt="foodo logo" class="logo-img" width="75" height="75">
+        </span>
+      </h1>
+
+      <p>
+        Your AI-powered cooking assistant, guiding you step-by-step to create delicious meals while connecting you with
+        a community of food lovers.
+      </p>
+
+      <div
+        style="position: relative; width: 100%; max-width: 800px; margin: 0 auto; height: 0; padding-top: 56.25%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+        <iframe loading="lazy"
+          style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+          src="https://www.canva.com/design/DAGmUCxl3ZA/Xw9LMDyjz-UVuTkZNSj_yg/view?embed"
+          allowfullscreen="allowfullscreen" allow="fullscreen">
+        </iframe>
       </div>
-    </main>
 
-    <footer>
-      &copy; 2025 <img src="./assets/foodo-yellow.png" alt="foodo" class="logo-img" width="30" height="30"> All rights reserved.
-    </footer>
-    
-    <script>
-      document.getElementById('darkModeToggle').addEventListener('change', function () {
-        document.body.classList.toggle('light-mode', !this.checked);
-      });
-    </script>
-  </body>
+      <div class="cta-buttons">
+        <a href="https://ctis.bilkent.edu.tr/ctis_seniorProject.php?semester=31&id=5043" target="_blank"
+          rel="noopener noreferrer">Senior Project Page</a>
+        <a href="https://github.com/foodohub" target="_blank" rel="noopener noreferrer">GitHub Organization</a>
+        <a href="https://www.instagram.com/getfoodo/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+
+      <a href="mailto:hello@foodo.cfd" class="contact-email">hello@foodo.cfd</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 <img src="./assets/foodo-yellow.png" alt="foodo" class="logo-img" width="30" height="30"> All rights
+    reserved.
+  </footer>
+
+  <script>
+    document.getElementById('darkModeToggle').addEventListener('change', function () {
+      document.body.classList.toggle('light-mode', !this.checked);
+    });
+  </script>
+</body>
+
 </html>
