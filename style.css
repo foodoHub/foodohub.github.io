@@ -7,20 +7,20 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
   transition: background-color 0.3s ease, color 0.3s ease;
-  background-color: #0D1217;
-  color: #F0F2F4;
+  background-color: #0d1217;
+  color: #f0f2f4;
 }
 
 body.light-mode {
   background-color: #ffffff;
-  color: #0D1217;
+  color: #0d1217;
 }
 
 main {
@@ -103,7 +103,7 @@ p {
   padding: 15px 30px;
   font-size: 1rem;
   background-color: #d35400;
-  color: #F0F2F4;
+  color: #f0f2f4;
   border: none;
   border-radius: 8px;
   transition: all 0.3s ease;
@@ -111,24 +111,32 @@ p {
 }
 
 .cta-buttons a:hover {
-  background-color: #DCB81B;
+  background-color: #dcb81b;
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cta-icon {
+  height: 22px;
+  width: 22px;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 3px;
 }
 
 /* Footer */
 footer {
   width: 100%;
   padding: 20px 0;
-  background-color: #161B22;
-  color: #F0F2F4;
+  background-color: #161b22;
+  color: #f0f2f4;
   text-align: center;
   transition: background-color 0.3s ease;
 }
 
 body.light-mode footer {
   background-color: #f0f0f0;
-  color: #0D1217;
+  color: #0d1217;
 }
 
 footer .logo-img {
@@ -137,7 +145,7 @@ footer .logo-img {
 }
 
 .contact-email {
-  color: #DCB81B;
+  color: #dcb81b;
   text-decoration: none;
   font-weight: 600;
   position: relative;
@@ -151,14 +159,14 @@ footer .logo-img {
 }
 
 .contact-email::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   border-radius: 25px;
-  background: #DCB81B;
+  background: #dcb81b;
   opacity: 0.1;
   transform: scale(0.9);
   transition: all 0.3s ease;
@@ -215,27 +223,27 @@ body.light-mode .contact-email:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #161B22;
+  background-color: #161b22;
   transition: 0.4s;
   border-radius: 34px;
-  border: 1px solid #2F363D;
+  border: 1px solid #2f363d;
 }
 
 .slider:before {
   position: absolute;
-  content: '';
+  content: "";
   height: 26px;
   width: 26px;
   left: 4px;
   bottom: 3px;
-  background-color: #F0F2F4;
+  background-color: #f0f2f4;
   transition: 0.4s;
   border-radius: 50%;
 }
 
 input:checked + .slider {
-  background-color: #DCB81B;
-  border-color: #DCB81B;
+  background-color: #dcb81b;
+  border-color: #dcb81b;
 }
 
 input:checked + .slider:before {
@@ -254,7 +262,7 @@ input:checked + .slider:before {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   will-change: transform;
-  border: 1px solid #2F363D;
+  border: 1px solid #2f363d;
 }
 
 body.light-mode .canva-embed {
