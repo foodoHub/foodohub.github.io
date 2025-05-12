@@ -100,27 +100,41 @@ p {
 
 .cta-buttons a {
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 12px 24px;
   font-size: 1rem;
   background-color: #d35400;
   color: #f0f2f4;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   transition: all 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  min-width: 200px;
+  justify-content: center;
 }
 
 .cta-buttons a:hover {
   background-color: #dcb81b;
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cta-buttons a:active {
+  transform: translateY(0);
 }
 
 .cta-icon {
-  height: 25px;
-  width: 25px;
-  vertical-align: middle;
-  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.cta-buttons a:hover .cta-icon {
+  transform: scale(1.1);
 }
 
 /* Footer */
